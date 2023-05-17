@@ -60,7 +60,7 @@ function App() {
     <div className="w-full max-w-screen-lg">
       <div className="mt-4 w-full justify-center flex flex-col items-center">
         {video && (
-          <video src={video} type="video/mp4" controls width="450" height="360" />
+          <video src={video} controls width="450" height="360" /> as React.ReactElement<HTMLVideoElement>
         )}
         {answers &&
           answers.map((answer, answerIndex) => (
@@ -112,7 +112,7 @@ function App() {
        onClick={() => {setStatus('initial') , 
                        setLifes(5), 
                        setCorrectAnswers(0)
-                       setIndexes({ questionIndex: 0, videoIndex: 0 });
+                       
                       }}
 
       className='mt-20 bg-blue-950 text-yellow-50 font-bold py-3 px-10 rounded-lg shadow-lg hover:bg-yellow-50 hover:text-blue-950 hover:border-blue-950 hover:shadow-md transition-all duration-300'
