@@ -1,0 +1,122 @@
+{
+    "questions": [
+      
+      
+      
+      {
+        "video": "../Videos/caleri boca gol verdadero.mp4",
+        "answers": [
+          {
+            "text": "Erbes",
+            "isCorrect": false
+          },
+          {
+            "text": "Caleri",
+            "isCorrect": true
+          },
+          {
+            "text": "Tevez",
+            "isCorrect": false
+          },
+          {
+            "text": "Pablo Perez",
+            "isCorrect": false
+          }
+        ]
+      },
+      
+     
+     
+      {
+        "video": "../Videos/gol ribair boca verdadero.mp4",
+        "answers": [
+          {
+            "text": "Cata Diaz",
+            "isCorrect": false
+          },
+          {
+            "text": "Ribair Rodriguez",
+            "isCorrect": true
+          },
+          {
+            "text": "Chiqui Perez",
+            "isCorrect": false
+          },
+          {
+            "text": "Caleri",
+            "isCorrect": false
+          }
+        ]
+      },
+      
+      
+      {
+        "video": "../Videos/gol mauro verdadero.mp4",
+        "answers": [
+          {
+            "text": "Bebelo Reinoso",
+            "isCorrect": false
+          },
+          {
+            "text": "Emanuel Mas",
+            "isCorrect": false
+          },
+          {
+            "text": "Mauro Zarate",
+            "isCorrect": true
+          },
+          {
+            "text": "Pavon",
+            "isCorrect": false
+          }
+        ]
+      },
+      
+      
+      {
+        "video": "../Videos/gol soldano verdadero.mp4",
+        "answers": [
+          {
+            "text": "Tevez",
+            "isCorrect": false
+          },
+          {
+            "text": "Zarate",
+            "isCorrect": false
+          },
+          {
+            "text": "Mac Allister",
+            "isCorrect": false
+          },
+          {
+            "text": "Soldano",
+            "isCorrect": true
+          }
+        ]
+      },
+      
+      
+      {
+        "video": "../Videos/gol bebelo verdadero.mp4",
+        "answers": [
+          {
+            "text": "Tevez",
+            "isCorrect": false
+          },
+          {
+            "text": "Mac Allister",
+            "isCorrect": false
+          },
+          {
+            "text": "Bebelo Reinoso",
+            "isCorrect": true
+          },
+          {
+            "text": "Pavon",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+  
