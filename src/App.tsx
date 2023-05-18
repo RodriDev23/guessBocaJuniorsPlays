@@ -1,5 +1,14 @@
 import { useState } from 'react';
 import QUESTIONS from './QUESTIONS.json';
+import confetti from "canvas-confetti";
+
+
+
+
+
+
+
+
 
 function App() {
   const [indexes, setIndexes] = useState({ questionIndex: 0, videoIndex: 0 });
@@ -22,6 +31,7 @@ function App() {
     if(isCorrect === true) {
     setIndexes({ questionIndex: nextQuestionIndex, videoIndex: answerIndex });
     setCorrectAnswers((prevCorrectAnswers) => prevCorrectAnswers + 1)
+    confetti()
     } else {
       setLifes((prevLifes) => prevLifes - 1);
     }  
