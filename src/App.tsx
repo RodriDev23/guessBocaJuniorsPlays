@@ -60,7 +60,7 @@ function App() {
     <div className="w-full max-w-screen-lg">
       <div className="mt-4 w-full justify-center flex flex-col items-center">
         {video && (
-          <video src={video} controls width="450" height="360" /> as React.ReactElement<HTMLVideoElement>
+          <video src={video} controls autoPlay width="450" height="360" /> as React.ReactElement<HTMLVideoElement>
         )}
         {answers &&
           answers.map((answer, answerIndex) => (
