@@ -53,30 +53,38 @@ function App() {
         
         
        
-   {status === 'playing' && lifes > 0 && correctAnswers < 5 && (
-   <div className="flex flex-col justify-center items-center">
-    <h1 className="text-4xl sm:text-5xl text-blue-950 font-bold mb-10">Trivia Boca</h1>
-    <h2 className='text-3xl sm:text-2xl text-blue-950 font-bold mb-1'>Tenes : {lifes} vidas</h2>
-    <div className="w-full max-w-screen-lg">
-      <div className="mt-4 w-full justify-center flex flex-col items-center">
-        {video && (
-          <video src={video} controls autoPlay playsInline loop width="450" height="360" /> as React.ReactElement<HTMLVideoElement>
-        )}
-        {answers &&
-          answers.map((answer, answerIndex) => (
-            <div className="w-[40vh]" key={answer.text}>
-              <button
-                onClick={() => handleIndex(answerIndex)}
-                className="block w-full text-center text-3xl py-6 px-8 rounded-lg shadow-lg font-bold bg-blue-900 text-yellow-50 mt-6 hover:bg-yellow-50 hover:text-blue-900 hover:border-blue-900 hover:shadow-md transition-all duration-300"
-              >
-                {answer.text}
-              </button>
+        {status === 'playing' && lifes > 0 && correctAnswers < 5 && (
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-4xl sm:text-5xl text-blue-950 font-bold mb-10">Trivia Boca</h1>
+          <h2 className="text-3xl sm:text-2xl text-blue-950 font-bold mb-1">Tenes: {lifes} vidas</h2>
+          <div className="w-full max-w-screen-lg">
+            <div className="mt-4 w-full justify-center flex flex-col items-center">
+              {video && (
+                <video
+                  src={video}
+                  className="w-full sm:w-96 h-auto sm:h-72"
+                  autoPlay
+                  playsInline
+                  loop
+                  controls
+                />
+              )}
+              {answers &&
+                answers.map((answer, answerIndex) => (
+                  <div className="w-[40vh]" key={answer.text}>
+                    <button
+                      onClick={() => handleIndex(answerIndex)}
+                      className="block w-full text-center text-3xl py-4 px-7 rounded-lg shadow-lg font-bold bg-blue-900 text-yellow-50 mt-6 hover:bg-yellow-50 hover:text-blue-900 hover:border-blue-900 hover:shadow-md transition-all duration-300"
+                    >
+                      {answer.text}
+                    </button>
+                  </div>
+                ))}
             </div>
-          ))}
-      </div>
-    </div>
-  </div>
-)}
+          </div>
+        </div>
+      )}
+
 
 
 
